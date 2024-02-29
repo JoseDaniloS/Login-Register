@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Your Account</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="Register.css">
+    <link rel="icon" href="letra-r.png">
+
+    <!--LINK PARA IMAGENS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1>Sign In</h1>
+        
+            <!--INPUT PARA COLOCAR O USERNAME-->
+            <div class="input-box">
+                <input type="email" name="" id=""placeholder="Username">
+                <i class='bx bxs-user-pin'></i>
+            </div>
+
+            <!--INPUT PARA INSERIR O EMAIL-->
+            <div class="input-box">
+                <input type="email" name="" id=""placeholder="E-mail">
+                <i class='bx bxs-envelope'></i>
+            </div>
+    
+            <!--INPUT PARA COLOCAR A SENHA-->
+            <div class="input-box">
+
+                <input type="password"id="senha" name="senha"placeholder="Password"onclick="animacao()" required onchange="confereSenha();">
+
+                <!--DIV COM A IMAGEM DE CHECK-->
+                <div id="cadeado" class="cadead">
+                    <i class='bx bxs-lock'></i>
+                </div>
+
+                <!--DIV COM A IMAGEM DE OLHO PARA MOSTRAR SENHA-->
+                <div id="eye" class="eyes">
+                    <i class='bx bx-show'id="mostrar-senha" onclick="mostrarSenha()"></i>
+                </div>
+
+            </div>
+
+            <!--INPUT PARA CONFIRMAR A SENHA-->
+            <div class="input-box">
+
+                <input type="password"id="confirma" name="confirma"placeholder="Confirm-Password" onclick="animacao()" required onchange="confereSenha();">
+
+                <!--DIV COM A IMAGEM DE CHECK-->
+                <div id="cadeado2" class="cadead2">
+                    <i class='bx bx-check'></i>
+                </div>
+
+                <!--DIV COM A IMAGEM DE OLHO PARA MOSTRAR SENHA-->
+                <div id="eye2" class="eyes2">
+                    <i class='bx bx-show'id="mostrar-senha2" onclick="mostrarSenha()"></i>
+                </div>
+
+            </div>
+    
+            <!--BOTÃO PARA CRIAR CONTA-->
+        
+            <button type="submit"class="btn">Create Account</button>
+    
+            <!--PARTE PARA REGISTRAR-->
+            <div class="register-link">
+                <p>Already have an account? <a href="/Login/index.html">Log in</a></p>
+            </div>
+
+            <div class="tips-login">
+
+                <p>Sign In With:</p>
+
+              <div class="img-login">
+
+                <a href="facebook"><img src="facebook copy.png" alt=""></a>
+                <a href="google"><img src="pesquisa copy.png" alt=""></a>
+                <a href="apple"><img src="logotipo-da-apple copy.png" alt=""></a>
+              </div>
+
+            </div>
+            
+        </form>
+    </div>
+  
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="letra-l.png">
+    <title>Logue In Your Account</title>
+    <link rel="stylesheet" href="/Login/script.js">
+    <script src="/Login/script.js"></script>
+
+    <!--LINK PARA IMAGENS-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1>Login</h1>
+        
+            <!--INPUT PARA COLOCAR O EMAIL-->
+            <div class="input-box">
+                <input type="email" name="" id=""placeholder="Username">
+                <i class='bx bxs-user-pin'></i>
+            </div>
+    
+            <!--INPUT PARA COLOCAR A SENHA-->
+            <div class="input-box">
+                <input type="password" name="" id="senha"placeholder="Password"onclick="animacao()">
+                <div id="cadeado" class="cadead">
+                    <i class='bx bxs-lock'></i>
+                </div>
+                <div class="eyes" id="eye">
+                    <i class='bx bx-shows'id="mostrar-senha" onclick="mostrarSenha()"></i>
+                </div>
+            </div>
+    
+            <!--PARTE PARA LEMBRE DE MIM OU ESQUECEU SENHA-->
+            <div class="remember-forgot">
+                <label for=""><input type="checkbox">Remember-me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <!--BOTÃO PARA FAZER LOGIN-->
+            <button type="submit"class="btn">Log In</button>
+            
+            <!--FAZER LOGIN COM OUTRAS CONTAS-->
+            <div class="tips-login">
+
+                <p>Log In With:</p>
+                
+                <!--IMAGENS DE OUTRAS CONTAS-->
+                <div class="img-login">
+
+                <a href="facebook"><img src="/Login/facebook copy.png" alt=""></a>
+                <a href="google"><img src="/Login/pesquisa copy.png" alt=""></a>
+                <a href="apple"><img src="/Login/logotipo-da-apple copy.png" alt=""></a>
+
+                </div>
+
+            </div>
+    
+    
+            <!--PARTE PARA REGISTRAR-->
+            <div class="register-link">
+                <p>Don't have an account? <a href="/Register/Register.html">Register</a></p>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>
